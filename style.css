@@ -1,0 +1,132 @@
+body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+#profile-img {
+    width: 320px;
+    height: auto;
+}
+
+#profile-svg {
+    width: 210px;
+    height: 210px;
+}
+
+#image-container {
+    justify-content: center; /* Default centered */
+}
+
+/* Media query for PC mode (screen width >= 1024px) */
+@media (min-width: 1024px) {
+    #image-container {
+        justify-content: flex-end; /* Align to the right in PC mode */
+    }
+}
+
+.carousel img {
+    width: 500px; 
+    height: 500px;
+    object-fit: contain; 
+    margin-bottom: 30px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    background-color: #f9f9f9; 
+    transition: all 0.3s ease; 
+  }
+  .carousel-inner img {
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 -10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+}
+
+.carousel-inner img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3), 0 -15px 25px rgba(0, 0, 0, 0.2);
+}
+  
+  @media (max-width: 1024px) {
+    .carousel img {
+      width: 250px; 
+      height: 170px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .carousel img {
+      width: 200px;
+      height: 150px;
+    }
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 1rem;
+}
+
+    #home .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (min-width: 768px) {
+        #home .text-content {
+            text-align: left;
+            width: 50%;
+        }
+
+        #home .image-content {
+            width: 50%;
+        }
+    }
+
+    @media (max-width: 767px) {
+        #home .text-content,
+        #home .image-content {
+            width: 100%;
+            text-align: center;
+        }
+
+        #home .image-content img {
+            margin-top: 20px;
+        }
+    }
+    .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0.95;
+}
+.carousel-inner img {
+    transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.carousel-inner img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+body {
+    overflow-x: hidden;
+}
+
